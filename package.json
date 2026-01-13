@@ -6,7 +6,9 @@
   "scripts": {
     "deploy": "node deploy.js",
     "deploy:dry-run": "node deploy.js --dry-run",
-    "deploy:verbose": "node deploy.js --verbose"
+    "deploy:verbose": "node deploy.js --verbose",
+    "cleanup": "node cleanup.js",
+    "cleanup:dry-run": "node cleanup.js --dry-run"
   },
   "repository": {
     "type": "git",
