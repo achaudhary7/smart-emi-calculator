@@ -66,4 +66,22 @@
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
+    <url>
+        <loc>https://rinmukt.com/how-it-works/</loc>
+        <lastmod>2026-01-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rinmukt.com/balance-transfer-calculator/</loc>
+        <lastmod>2026-01-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rinmukt.com/amortization-schedule-explained/</loc>
+        <lastmod>2026-01-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

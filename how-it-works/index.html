@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>How EMI Calculator Works | EMI Formula & Methodology Explained</title>
+    <meta name="description" content="Learn how our EMI calculator works. Understand the EMI formula, reducing balance method, prepayment calculations, and assumptions. 100% transparent methodology.">
+    <meta name="author" content="Anup Choudhary">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rinmukt.com/how-it-works/">
+    <meta property="og:title" content="How EMI Calculator Works - Formula & Methodology">
+    <meta property="og:description" content="Complete transparency on how we calculate EMI, interest savings, and prepayment benefits.">
+    <link rel="canonical" href="https://rinmukt.com/how-it-works/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+    <meta name="theme-color" content="#0a0f1c">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate EMI",
+        "description": "Step-by-step guide to understanding EMI calculation using the reducing balance method",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Understand the EMI Formula",
+                "text": "EMI = P × r × (1+r)^n / [(1+r)^n - 1], where P is principal, r is monthly interest rate, n is number of months"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Convert Annual Rate to Monthly",
+                "text": "Divide annual interest rate by 12 to get monthly rate. Example: 8.5% annual = 0.085/12 = 0.00708 monthly"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Calculate EMI",
+                "text": "Plug values into the formula. For ₹50 lakh at 8.5% for 20 years: EMI = ₹43,391"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Understand Amortization",
+                "text": "Each EMI has two parts: interest (on outstanding principal) and principal repayment. Early EMIs have more interest, later EMIs have more principal."
+            }
+        ]
+    }
+    </script>
+    <link rel="preload" href="../fonts/outfit-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/outfit-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/jetbrains-mono-500.woff2" as="font" type="font/woff2" crossorigin>
+    <style>@font-face{font-family:'Outfit';font-style:normal;font-display:swap;font-weight:400;src:url(../fonts/outfit-400.woff2) format('woff2')}@font-face{font-family:'Outfit';font-style:normal;font-display:swap;font-weight:700;src:url(../fonts/outfit-700.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:500;src:url(../fonts/jetbrains-mono-500.woff2) format('woff2')}:root{--bg:#0a0f1c;--bg2:#111827;--card:#1a2236;--gold:#f0b429;--green:#10b981;--t1:#f3f4f6;--t2:#b0b8c4;--t3:#8891a0;--brd:#2d3a52}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Outfit,-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--t1);line-height:1.7;min-height:100vh}body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(240,180,41,.08) 0%,transparent 50%);pointer-events:none;z-index:-1}.container{max-width:900px;margin:0 auto;padding:20px}.top-nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--brd);margin-bottom:30px}.nav-logo{display:flex;align-items:center;gap:8px;font-size:1.3rem;font-weight:700;color:var(--gold);text-decoration:none}.nav-logo span{color:var(--t1)}.nav-links{display:flex;gap:15px}.nav-links a{color:var(--t2);text-decoration:none;font-size:.9rem;padding:6px 12px;border-radius:8px}.nav-links a:hover{color:var(--gold);background:var(--card)}header{text-align:center;padding:40px 20px}.logo{font-size:4rem;margin-bottom:15px}h1{font-size:2rem;font-weight:700;color:var(--gold);margin-bottom:15px}.tagline{color:var(--t2);font-size:1.1rem}.content{background:var(--card);border:1px solid var(--brd);border-radius:16px;padding:40px;margin:30px 0}.content h2{color:var(--gold);font-size:1.5rem;margin:35px 0 15px}.content h2:first-child{margin-top:0}.content h3{color:var(--t1);font-size:1.2rem;margin:25px 0 12px}.content p{color:var(--t2);margin-bottom:15px}.content ul,.content ol{margin:15px 0;padding-left:25px}.content li{color:var(--t2);margin:10px 0}.formula-box{background:var(--bg2);border:2px solid var(--gold);border-radius:12px;padding:25px;margin:25px 0;text-align:center}.formula{font-family:'JetBrains Mono',monospace;font-size:1.3rem;color:var(--gold);margin-bottom:15px}.formula-desc{font-size:.9rem;color:var(--t3)}.example-box{background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.3);border-radius:12px;padding:20px;margin:20px 0}.example-box h4{color:var(--green);margin-bottom:10px}.example-box p{margin:8px 0}.example-box .calc{font-family:'JetBrains Mono',monospace;background:var(--bg2);padding:10px 15px;border-radius:8px;margin:10px 0;font-size:.9rem;overflow-x:auto}.warning-box{background:rgba(244,63,94,.1);border:1px solid rgba(244,63,94,.3);border-radius:12px;padding:20px;margin:20px 0}.warning-box h4{color:#f43f5e;margin-bottom:10px}.info-box{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.3);border-radius:12px;padding:20px;margin:20px 0}.info-box h4{color:#3b82f6;margin-bottom:10px}.table-container{overflow-x:auto;margin:20px 0}.data-table{width:100%;border-collapse:collapse;font-size:.9rem}.data-table th,.data-table td{padding:12px 15px;text-align:left;border-bottom:1px solid var(--brd)}.data-table th{background:var(--bg2);color:var(--gold);font-weight:600}.data-table td{color:var(--t2)}.data-table tr:hover td{background:rgba(240,180,41,.05)}.mono{font-family:'JetBrains Mono',monospace}footer{text-align:center;padding:40px 20px;color:var(--t3);border-top:1px solid var(--brd);margin-top:40px}footer a{color:var(--gold)}.footer-links{display:flex;justify-content:center;gap:25px;margin-bottom:20px;flex-wrap:wrap}.cta-box{background:linear-gradient(135deg,rgba(240,180,41,.15) 0%,rgba(240,180,41,.05) 100%);border:1px solid var(--gold);border-radius:16px;padding:30px;margin:30px 0;text-align:center}.cta-box h3{color:var(--gold);margin-bottom:15px}.cta-box a{display:inline-block;background:linear-gradient(135deg,#f0b429 0%,#d97706 100%);color:var(--bg);padding:12px 30px;border-radius:10px;text-decoration:none;font-weight:600;margin-top:10px}@media(max-width:600px){.container{padding:15px}.content{padding:25px}h1{font-size:1.6rem}.nav-links{display:none}.formula{font-size:1rem}}</style>
+</head>
+<body>
+    <div class="container">
+        <nav class="top-nav">
+            <a href="/" class="nav-logo">🏠 <span>RinMukt</span></a>
+            <div class="nav-links">
+                <a href="/">Calculator</a>
+                <a href="/how-it-works/">How It Works</a>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </div>
+        </nav>
+
+        <header>
+            <div class="logo">📐</div>
+            <h1>How Our EMI Calculator Works</h1>
+            <p class="tagline">Complete transparency on our calculation methodology</p>
+        </header>
+
+        <article class="content">
+            <h2>The EMI Formula We Use</h2>
+            <p>Our calculator uses the <strong>standard reducing balance EMI formula</strong> — the same formula used by all Indian banks including SBI, HDFC, ICICI, and Axis Bank.</p>
+            
+            <div class="formula-box">
+                <div class="formula">EMI = P × r × (1+r)ⁿ / [(1+r)ⁿ - 1]</div>
+                <div class="formula-desc">
+                    <strong>P</strong> = Principal (Loan Amount) | 
+                    <strong>r</strong> = Monthly Interest Rate | 
+                    <strong>n</strong> = Number of Months
+                </div>
+            </div>
+
+            <h3>Converting Annual Rate to Monthly</h3>
+            <p>Banks quote interest rates annually, but EMI is calculated monthly. To convert:</p>
+            <div class="example-box">
+                <h4>📝 Example</h4>
+                <p>If annual interest rate is <strong>8.5%</strong>:</p>
+                <div class="calc">Monthly Rate (r) = 8.5 ÷ 12 ÷ 100 = 0.00708</div>
+            </div>
+
+            <h2>Step-by-Step Calculation Example</h2>
+            <p>Let's calculate EMI for a typical home loan:</p>
+            
+            <div class="example-box">
+                <h4>🏠 ₹50 Lakh Home Loan Example</h4>
+                <p><strong>Loan Amount (P):</strong> ₹50,00,000</p>
+                <p><strong>Interest Rate:</strong> 8.5% per annum</p>
+                <p><strong>Tenure:</strong> 20 years (240 months)</p>
+                <div class="calc">
+r = 8.5 / 12 / 100 = 0.00708333
+n = 20 × 12 = 240 months
+
+EMI = 50,00,000 × 0.00708 × (1.00708)²⁴⁰ / [(1.00708)²⁴⁰ - 1]
+EMI = 50,00,000 × 0.00708 × 5.489 / 4.489
+EMI = ₹43,391 per month
+                </div>
+                <p><strong>Total Payment:</strong> ₹43,391 × 240 = ₹1,04,13,840</p>
+                <p><strong>Total Interest:</strong> ₹1,04,13,840 - ₹50,00,000 = <span style="color:#f43f5e">₹54,13,840</span></p>
+            </div>
+
+            <h2>How Prepayment Calculation Works</h2>
+            <p>When you make extra payments, our calculator simulates the entire loan month-by-month:</p>
+            
+            <ol>
+                <li><strong>Apply Extra Payment:</strong> The extra amount goes directly to reducing your principal</li>
+                <li><strong>Recalculate Interest:</strong> Next month's interest is calculated on the new (lower) principal</li>
+                <li><strong>Continue Until Paid:</strong> This continues until the loan balance reaches zero</li>
+            </ol>
+
+            <div class="info-box">
+                <h4>💡 Why Early Prepayment Saves More</h4>
+                <p>In the early years of your loan, most of your EMI goes toward interest (because outstanding principal is highest). By prepaying early, you reduce principal faster, which means less interest accumulates over the remaining tenure.</p>
+            </div>
+
+            <h2>Our Assumptions</h2>
+            <p>To keep calculations simple and universally applicable, we make these assumptions:</p>
+            
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Assumption</th>
+                            <th>Our Setting</th>
+                            <th>Why</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Interest Calculation</td>
+                            <td class="mono">Reducing Balance (Monthly)</td>
+                            <td>Used by all Indian banks for home loans</td>
+                        </tr>
+                        <tr>
+                            <td>Prepayment Application</td>
+                            <td class="mono">Applied to Principal Immediately</td>
+                            <td>Standard practice for part-prepayments</td>
+                        </tr>
+                        <tr>
+                            <td>Prepayment Penalty</td>
+                            <td class="mono">Not Included</td>
+                            <td>Floating rate loans have no penalty (RBI rule)</td>
+                        </tr>
+                        <tr>
+                            <td>Processing Fees</td>
+                            <td class="mono">Not Included</td>
+                            <td>Varies by bank; add separately if needed</td>
+                        </tr>
+                        <tr>
+                            <td>EMI Rounding</td>
+                            <td class="mono">Rounded to Nearest Rupee</td>
+                            <td>Banks typically round EMI amounts</td>
+                        </tr>
+                        <tr>
+                            <td>Compounding</td>
+                            <td class="mono">Monthly</td>
+                            <td>Standard for retail loans in India</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Amortization Schedule Explained</h2>
+            <p>Each EMI payment is split into two parts:</p>
+            <ul>
+                <li><strong>Interest Component:</strong> Calculated as (Outstanding Principal × Monthly Rate)</li>
+                <li><strong>Principal Component:</strong> EMI minus Interest = Amount reducing your loan</li>
+            </ul>
+
+            <div class="example-box">
+                <h4>📊 First vs Last EMI Breakdown (₹50L @ 8.5%)</h4>
+                <div class="calc">
+Month 1:  Interest = ₹35,417 | Principal = ₹7,974  | Balance = ₹49,92,026
+Month 120: Interest = ₹20,851 | Principal = ₹22,540 | Balance = ₹29,20,547
+Month 240: Interest = ₹305    | Principal = ₹43,086 | Balance = ₹0
+                </div>
+                <p>Notice how principal repayment increases over time as interest decreases!</p>
+            </div>
+
+            <h2>What Makes Our Calculator Different</h2>
+            <ul>
+                <li>✅ <strong>Real-time prepayment impact:</strong> See exactly how much you save</li>
+                <li>✅ <strong>Multiple payment options:</strong> Monthly extra, quarterly, yearly, or lump sum</li>
+                <li>✅ <strong>Side-by-side comparison:</strong> Normal EMI vs. with prepayment</li>
+                <li>✅ <strong>Full amortization schedule:</strong> Month-by-month breakdown</li>
+                <li>✅ <strong>100% client-side:</strong> All calculations in your browser, no data sent anywhere</li>
+            </ul>
+
+            <h2>Accuracy & Limitations</h2>
+            
+            <div class="warning-box">
+                <h4>⚠️ Important Notes</h4>
+                <p>While our calculator is highly accurate, please note:</p>
+                <ul style="margin-top:10px">
+                    <li>Actual bank EMI may differ by ₹1-10 due to rounding methods</li>
+                    <li>Some banks use daily reducing balance (minor difference)</li>
+                    <li>Variable/floating rates may change during loan tenure</li>
+                    <li>Always verify final figures with your bank before making decisions</li>
+                </ul>
+            </div>
+
+            <div class="cta-box">
+                <h3>🧮 Ready to Calculate?</h3>
+                <p>Now that you understand how it works, try our calculator and see your potential savings!</p>
+                <a href="/">Open EMI Calculator →</a>
+            </div>
+
+            <h2>Questions?</h2>
+            <p>If you have questions about our methodology or found any discrepancy, please <a href="/contact/" style="color:var(--gold)">contact us</a>. We're committed to accuracy and transparency.</p>
+        </article>
+
+        <footer>
+            <div class="footer-links">
+                <a href="/">EMI Calculator</a>
+                <a href="/how-it-works/">How It Works</a>
+                <a href="/about/">About</a>
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/contact/">Contact</a>
+            </div>
+            <p>© 2024-2026 <a href="/">RinMukt.com</a> | Created by <strong>Anup Choudhary</strong> in Pune, India 🇮🇳</p>
+        </footer>
+    </div>
+</body>
+</html>
