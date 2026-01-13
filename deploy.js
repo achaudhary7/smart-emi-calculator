@@ -47,6 +47,12 @@ const config = {
     filesToDeploy: [
         'index.html',
         '.htaccess',
+        'sitemap.xml',
+        'robots.txt',
+        'home-loan-emi-calculator/index.html',
+        'car-loan-emi-calculator/index.html',
+        'sbi-home-loan-calculator/index.html',
+        'prepayment-calculator/index.html',
         'fonts/outfit-400.woff2',
         'fonts/outfit-600.woff2',
         'fonts/outfit-700.woff2',
@@ -201,7 +207,44 @@ async function deploy() {
         console.log(`   🌐 URL: https://rinmukt.com/`);
         
         log.header('🧹 CACHE CLEARING');
-        console.log(`${colors.yellow}To clear Hostinger cache:${colors.reset}`);
+        
+        // Attempt to purge cache via HTTP request
+        log.info('Attempting automatic cache purge...');
+        try {
+            const https = require('https');
+            const purgeUrls = [
+                'https://rinmukt.com/',
+                'https://rinmukt.com/index.html'
+            ];
+            
+            for (const url of purgeUrls) {
+                // Send PURGE request (LiteSpeed method)
+                await new Promise((resolve) => {
+                    const req = https.request(url, { method: 'PURGE', timeout: 5000 }, (res) => {
+                        if (res.statusCode === 200 || res.statusCode === 405) {
+                            log.success(`Cache purge sent: ${url}`);
+                        }
+                        resolve();
+                    });
+                    req.on('error', () => resolve());
+                    req.on('timeout', () => { req.destroy(); resolve(); });
+                    req.end();
+                });
+                
+                // Also make a fresh GET request to warm cache with new content
+                await new Promise((resolve) => {
+                    https.get(`${url}?purge=${version}`, { timeout: 5000 }, (res) => {
+                        res.on('data', () => {});
+                        res.on('end', resolve);
+                    }).on('error', () => resolve());
+                });
+            }
+            log.success('Cache purge requests completed!');
+        } catch (e) {
+            log.warn('Auto-purge attempted (may require manual clear)');
+        }
+        
+        console.log(`\n${colors.yellow}Manual cache clear (if needed):${colors.reset}`);
         console.log(`   1. Go to: https://hpanel.hostinger.com/`);
         console.log(`   2. Select your website`);
         console.log(`   3. Advanced → Cache Manager → Flush Cache`);

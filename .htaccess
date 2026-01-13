@@ -2,6 +2,22 @@
 DirectoryIndex index.html index.php
 
 # ============================================================================
+# LITESPEED CACHE CONTROL - DISABLE FOR HTML
+# ============================================================================
+
+# Disable LiteSpeed Cache for HTML files
+<IfModule LiteSpeed>
+    CacheLookup off
+</IfModule>
+
+# Alternative: Set LiteSpeed cache control header
+<IfModule mod_headers.c>
+    <FilesMatch "\.html$">
+        Header set X-LiteSpeed-Cache-Control "no-cache"
+    </FilesMatch>
+</IfModule>
+
+# ============================================================================
 # CACHE CONTROL - AGGRESSIVE SETTINGS
 # ============================================================================
 
@@ -12,9 +28,10 @@ Header unset ETag
 <IfModule mod_headers.c>
     # HTML - No cache (always fetch fresh)
     <FilesMatch "\.html$">
-        Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+        Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0, private"
         Header set Pragma "no-cache"
         Header set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+        Header set X-LiteSpeed-Cache-Control "no-cache"
     </FilesMatch>
     
     # Fonts - Cache for 1 year (immutable) - OVERRIDE any server defaults
