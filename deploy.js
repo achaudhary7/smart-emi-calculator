@@ -45,7 +45,8 @@ const config = {
     secure: false,
     remoteDir: process.env.FTP_REMOTE_DIR || '/public_html',
     filesToDeploy: [
-        'index.html'
+        'index.html',
+        '.htaccess'
         // Add more files here as your project grows:
         // 'styles.css',
         // 'script.js',
