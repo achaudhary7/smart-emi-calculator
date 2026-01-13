@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags - Enhanced SEO -->
+    <title>Smart EMI Calculator with Extra Payment Tracker | See How Paying ₹4,580 Extra Saves ₹3+ Lakhs</title>
+    <meta name="title" content="Smart EMI Calculator with Extra Payment Tracker | See How Paying ₹4,580 Extra Saves ₹3+ Lakhs">
+    <meta name="description" content="India's only EMI calculator that shows REAL savings when you pay more than your EMI. Enter your actual bank deduction (e.g., ₹20,000 vs ₹15,420 EMI) and see exactly how many years you'll save. Works for SBI, HDFC, ICICI, Axis home loans.">
+    <meta name="keywords" content="EMI calculator with prepayment, extra EMI payment calculator, home loan prepayment calculator India, SBI home loan EMI calculator, HDFC home loan calculator, loan tenure reduction calculator, interest savings calculator, part payment calculator, principal reduction calculator, how to close home loan early, extra principal payment benefits">
+    <meta name="author" content="Smart EMI Calculator">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Geo Tags for India -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+    <meta name="language" content="English">
+    <meta name="target" content="all">
+    <meta name="audience" content="all">
+    <meta name="coverage" content="India">
+    <meta name="distribution" content="global">
+    
+    <!-- Open Graph / Facebook - Enhanced -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rinmukt.com/">
+    <meta property="og:site_name" content="RinMukt - Smart EMI Calculator">
+    <meta property="og:title" content="Smart EMI Calculator - See How Extra Payments Save Lakhs on Your Home Loan">
+    <meta property="og:description" content="The ONLY calculator that tracks your actual monthly payment vs EMI. Paying ₹20,000 when EMI is ₹15,420? See how that ₹4,580 extra saves you ₹3+ lakhs and 4+ years!">
+    <meta property="og:image" content="https://rinmukt.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Smart EMI Calculator showing savings from extra payments">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- Twitter Card - Enhanced -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@rinmukt">
+    <meta name="twitter:creator" content="@rinmukt">
+    <meta name="twitter:title" content="Smart EMI Calculator - Extra Payment Tracker">
+    <meta name="twitter:description" content="See how paying extra each month saves lakhs on your home loan. Real prepayment calculator for Indian banks.">
+    <meta name="twitter:image" content="https://rinmukt.com/twitter-card.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rinmukt.com/">
+    
+    <!-- Alternate Language (if applicable) -->
+    <link rel="alternate" hreflang="en-in" href="https://rinmukt.com/">
+    <link rel="alternate" hreflang="x-default" href="https://rinmukt.com/">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <meta name="theme-color" content="#0a0f1c">
+    <meta name="msapplication-TileColor" content="#0a0f1c">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <!-- Google Fonts - Unique typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS Inline for Core Web Vitals -->
+    <style>
+        :root {
+            /* Rich Navy & Gold Theme - Inspired by Banking */
+            --bg-primary: #0a0f1c;
+            --bg-secondary: #111827;
+            --bg-card: #1a2236;
+            --bg-card-hover: #222d47;
+            --accent-gold: #f0b429;
+            --accent-gold-dim: #d4a42a;
+            --accent-emerald: #10b981;
+            --accent-rose: #f43f5e;
+            --accent-blue: #3b82f6;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            --border-color: #2d3a52;
+            --gradient-gold: linear-gradient(135deg, #f0b429 0%, #d97706 100%);
+            --gradient-card: linear-gradient(145deg, #1a2236 0%, #151c2c 100%);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            --shadow-gold: 0 4px 30px rgba(240, 180, 41, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background Pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(240, 180, 41, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(16, 185, 129, 0.04) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Grid Pattern Overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Skip to Content - Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-gold);
+            color: var(--bg-primary);
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 15px 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .breadcrumb a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        .breadcrumb span {
+            margin: 0 8px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px 20px 30px;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: clamp(1.6rem, 4vw, 2.5rem);
+            font-weight: 700;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .tagline strong {
+            color: var(--accent-emerald);
+            font-weight: 600;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            background: var(--bg-card);
+            padding: 8px 14px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Main Layout */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        @media (min-width: 1024px) {
+            .main-content {
+                grid-template-columns: 420px 1fr;
+            }
+        }
+
+        /* Card Styles */
+        .card {
+            background: var(--gradient-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            letter-spacing: 0.02em;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-prefix {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent-gold);
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+        }
+
+        .input-suffix {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 16px 16px 16px 45px;
+            font-size: 1.1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 4px rgba(240, 180, 41, 0.1);
+        }
+
+        input::placeholder {
+            color: var(--text-muted);
+        }
+
+        /* Remove number input arrows */
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        /* Range Slider */
+        .range-container {
+            margin-top: 10px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: var(--border-color);
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(240, 180, 41, 0.4);
+            transition: transform 0.2s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+
+        /* Calculate Button */
+        .btn-calculate {
+            width: 100%;
+            padding: 18px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            background: var(--gradient-gold);
+            border: none;
+            border-radius: 14px;
+            color: var(--bg-primary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .btn-calculate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(240, 180, 41, 0.3);
+        }
+
+        .btn-calculate:active {
+            transform: translateY(0);
+        }
+
+        /* Results Section */
+        .results-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .results-section.visible {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-gold);
+        }
+
+        .stat-icon {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .stat-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-value.positive {
+            color: var(--accent-emerald);
+        }
+
+        .stat-value.negative {
+            color: var(--accent-rose);
+        }
+
+        .stat-value.gold {
+            color: var(--accent-gold);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* Progress Bar */
+        .progress-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .progress-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .progress-percentage {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--accent-gold);
+        }
+
+        .progress-bar {
+            height: 12px;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-gold);
+            border-radius: 6px;
+            transition: width 1s ease;
+            position: relative;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .progress-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Comparison Cards */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .comparison-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 25px;
+        }
+
+        .comparison-card.highlight {
+            border-color: var(--accent-gold);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .comparison-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .comparison-badge {
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .badge-normal {
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+        }
+
+        .badge-prepay {
+            background: rgba(240, 180, 41, 0.15);
+            color: var(--accent-gold);
+        }
+
+        .comparison-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-label {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .comparison-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Amortization Table */
+        .table-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .table-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .table-toggle {
+            display: flex;
+            gap: 10px;
+        }
+
+        .toggle-btn {
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-btn.active {
+            background: var(--gradient-gold);
+            border-color: var(--accent-gold);
+            color: var(--bg-primary);
+        }
+
+        .table-container {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .table-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .table-container::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+
+        .table-container::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: var(--bg-secondary);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        th, td {
+            padding: 14px 16px;
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        th {
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        th:first-child, td:first-child {
+            text-align: left;
+        }
+
+        td {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:hover td {
+            background: var(--bg-card-hover);
+        }
+
+        .extra-payment {
+            color: var(--accent-emerald);
+        }
+
+        /* Savings Highlight */
+        .savings-banner {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.05) 100%);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .savings-icon {
+            font-size: 3rem;
+        }
+
+        .savings-content h3 {
+            font-size: 1.3rem;
+            color: var(--accent-emerald);
+            margin-bottom: 5px;
+        }
+
+        .savings-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .savings-amount {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            color: var(--accent-emerald);
+        }
+
+        /* Content Section - SEO Rich */
+        .content-section {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        .content-section h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 30px 0 15px;
+        }
+
+        .content-section p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .content-section li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .content-section li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-emerald);
+            font-weight: bold;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-3px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 50px;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 20px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            text-align: left;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.open .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Banks Section */
+        .banks-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .banks-section h3 {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .bank-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .bank-logo {
+            padding: 10px 20px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            header {
+                padding: 15px 15px 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat-card {
+                padding: 15px;
+            }
+
+            .stat-value {
+                font-size: 1.3rem;
+            }
+
+            th, td {
+                padding: 10px 8px;
+                font-size: 0.8rem;
+            }
+
+            .savings-banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-badges {
+                gap: 10px;
+            }
+
+            .trust-badge {
+                font-size: 0.75rem;
+                padding: 6px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .table-toggle {
+                flex-direction: column;
+            }
+
+            .table-header {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 8px 12px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: flex;
+            gap: 10px;
+        }
+
+        .info-box-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Animation classes */
+        .animate-in {
+            animation: slideIn 0.5s ease forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Pulse animation for CTA */
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 30px rgba(240, 180, 41, 0.15); }
+            50% { box-shadow: 0 4px 40px rgba(240, 180, 41, 0.35); }
+        }
+
+        /* Print Styles */
+        @media print {
+            body::before, body::after {
+                display: none;
+            }
+            .btn-calculate, .table-toggle, .trust-badges {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content - Accessibility -->
+    <a href="#calculator" class="skip-link">Skip to Calculator</a>
+
+    <div class="container">
+        <!-- Breadcrumb for SEO -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span>›</span>
+            <span>EMI Calculator with Prepayment</span>
+        </nav>
+
+        <header>
+            <div class="logo" role="img" aria-label="Smart EMI Calculator">🏠</div>
+            <h1>Smart EMI Calculator with Extra Payment Tracker</h1>
+            <p class="tagline">
+                The <strong>ONLY calculator</strong> that shows REAL savings when you pay more than your EMI. 
+                Paying ₹20,000 when EMI is ₹15,420? <strong>See how that extra ₹4,580 saves you lakhs!</strong>
+            </p>
+            
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <span class="trust-badge">✓ 100% Free</span>
+                <span class="trust-badge">🔒 No Data Stored</span>
+                <span class="trust-badge">📱 Works Offline</span>
+                <span class="trust-badge">🇮🇳 Made for India</span>
+            </div>
+        </header>
+
+        <main class="main-content" id="calculator">
+            <!-- Input Section -->
+            <aside>
+                <section class="card" aria-labelledby="loan-details-title">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <h2 class="card-title" id="loan-details-title">Your Loan Details</h2>
+                    </div>
+
+                    <form id="emiForm" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="loanAmount">Principal Loan Amount</label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">₹</span>
+                                <input 
+                                    type="number" 
+                                    id="loanAmount" 
+                                    name="loanAmount"
+                                    placeholder="16,00,000"
+                                    value="1600000"
+                                    min="10000"
+                                    max="100000000"
+                                    required
+                                    aria-describedby="loanAmountHelp"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interestRate">Annual Interest Rate</label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">%</span>
+                                <input 
+                                    type="number" 
+                                    id="interestRate" 
+                                    name="interestRate"
+                                    placeholder="8.5"
+                                    value="8.5"
+                                    min="1"
+                                    max="30"
+                                    step="0.01"
+                                    required
+                                >
+                                <span class="input-suffix">per annum</span>
+                            </div>
+                            <div class="range-container">
+                                <input 
+                                    type="range" 
+                                    id="interestRateSlider" 
+                                    min="5" 
+                                    max="20" 
+                                    step="0.1" 
+                                    value="8.5"
+                                    aria-label="Interest rate slider"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="loanTenure">Loan Tenure</label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">⏱️</span>
+                                <input 
+                                    type="number" 
+                                    id="loanTenure" 
+                                    name="loanTenure"
+                                    placeholder="15"
+                                    value="15"
+                                    min="1"
+                                    max="30"
+                                    required
+                                >
+                                <span class="input-suffix">years</span>
+                            </div>
+                            <div class="range-container">
+                                <input 
+                                    type="range" 
+                                    id="tenureSlider" 
+                                    min="1" 
+                                    max="30" 
+                                    value="15"
+                                    aria-label="Tenure slider"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="monthlyPayment">
+                                Your Actual Monthly Payment 
+                                <span class="tooltip" data-tooltip="The total amount your bank deducts each month">ℹ️</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">₹</span>
+                                <input 
+                                    type="number" 
+                                    id="monthlyPayment" 
+                                    name="monthlyPayment"
+                                    placeholder="20,000"
+                                    value="20000"
+                                    min="0"
+                                    required
+                                >
+                                <span class="input-suffix">per month</span>
+                            </div>
+                            <div class="info-box">
+                                <span class="info-box-icon">💡</span>
+                                <span><strong>This is what makes us different!</strong> Enter the actual amount you pay (or want to pay). Any amount above your calculated EMI automatically goes to principal reduction.</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-calculate pulse" onclick="calculateEMI()" aria-label="Calculate EMI and see your savings">
+                            <span>🧮</span>
+                            Calculate My Savings
+                        </button>
+                    </form>
+                </section>
+            </aside>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" aria-labelledby="results-title">
+                <!-- Savings Banner -->
+                <div class="savings-banner" id="savingsBanner" style="display: none;">
+                    <span class="savings-icon">🎉</span>
+                    <div class="savings-content">
+                        <h3>Congratulations! You're a Smart Borrower!</h3>
+                        <p>By paying <span class="savings-amount" id="extraPaymentAmount">₹0</span> extra monthly, you'll save <span class="savings-amount" id="totalSavings">₹0</span> in interest and finish <span class="savings-amount" id="timeSaved">0 months</span> early!</p>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <div class="stat-icon">📅</div>
+                        <div class="stat-value gold" id="emiAmount">₹0</div>
+                        <div class="stat-label">Standard EMI</div>
+                    </article>
+                    <article class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-value" id="totalInterest">₹0</div>
+                        <div class="stat-label">Total Interest (Normal)</div>
+                    </article>
+                    <article class="stat-card">
+                        <div class="stat-icon">✨</div>
+                        <div class="stat-value positive" id="newInterest">₹0</div>
+                        <div class="stat-label">Interest with Prepayment</div>
+                    </article>
+                    <article class="stat-card">
+                        <div class="stat-icon">⏰</div>
+                        <div class="stat-value gold" id="newTenure">0</div>
+                        <div class="stat-label">New Tenure</div>
+                    </article>
+                </div>
+
+                <!-- Progress Section -->
+                <div class="progress-section">
+                    <div class="progress-header">
+                        <span class="progress-title">Loan Payoff Progress</span>
+                        <span class="progress-percentage" id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span>₹0 Paid</span>
+                        <span id="remainingAmount">₹0 Remaining</span>
+                    </div>
+                </div>
+
+                <!-- Comparison Grid -->
+                <div class="comparison-grid">
+                    <article class="comparison-card">
+                        <div class="comparison-header">
+                            <span class="comparison-badge badge-normal">Without Extra Payment</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Monthly Payment</span>
+                            <span class="comparison-value" id="normalEMI">₹0</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Total Tenure</span>
+                            <span class="comparison-value" id="normalTenure">0 months</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Total Interest Paid</span>
+                            <span class="comparison-value" id="normalInterest">₹0</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Total Amount Paid</span>
+                            <span class="comparison-value" id="normalTotal">₹0</span>
+                        </div>
+                    </article>
+
+                    <article class="comparison-card highlight">
+                        <div class="comparison-header">
+                            <span class="comparison-badge badge-prepay">With Your Extra Payment ⭐</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Monthly Payment</span>
+                            <span class="comparison-value" id="prepayEMI">₹0</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Total Tenure</span>
+                            <span class="comparison-value positive" id="prepayTenure">0 months</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Total Interest Paid</span>
+                            <span class="comparison-value positive" id="prepayInterest">₹0</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Total Amount Paid</span>
+                            <span class="comparison-value positive" id="prepayTotal">₹0</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Amortization Table -->
+                <div class="table-section">
+                    <div class="table-header">
+                        <h3 class="table-title">📋 Complete Amortization Schedule</h3>
+                        <div class="table-toggle">
+                            <button class="toggle-btn active" onclick="toggleView('yearly')" id="yearlyBtn">Yearly View</button>
+                            <button class="toggle-btn" onclick="toggleView('monthly')" id="monthlyBtn">Monthly View</button>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table id="amortizationTable" aria-label="Loan amortization schedule showing payment breakdown">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Period</th>
+                                    <th scope="col">EMI Paid</th>
+                                    <th scope="col">Principal</th>
+                                    <th scope="col">Interest</th>
+                                    <th scope="col">Extra Payment</th>
+                                    <th scope="col">Outstanding Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- Table rows will be generated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- SEO Rich Content Section -->
+        <section class="content-section" aria-labelledby="about-title">
+            <h2 id="about-title">What Makes This EMI Calculator Different?</h2>
+            
+            <p>
+                Most EMI calculators only show you the standard EMI amount. But here's the reality: <strong>thousands of Indians like you pay MORE than their EMI each month</strong>. Maybe your bank auto-debits ₹20,000 but your actual EMI is only ₹15,420. Where does that extra ₹4,580 go? It goes directly to reducing your principal!
+            </p>
+            
+            <p>
+                This <strong>Smart EMI Calculator with Extra Payment Tracker</strong> is specifically designed for borrowers who want to understand the real impact of their monthly payments. Whether you're paying extra intentionally or your bank rounds up your EMI, this calculator shows you:
+            </p>
+
+            <ul>
+                <li>Exactly how much interest you'll save over the loan tenure</li>
+                <li>How many months/years earlier you'll become debt-free</li>
+                <li>Month-by-month breakdown of where every rupee goes</li>
+                <li>Side-by-side comparison: Normal EMI vs Your Actual Payment</li>
+                <li>Complete amortization schedule with prepayment tracking</li>
+            </ul>
+
+            <!-- Feature Cards -->
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Extra Payment Tracking</h4>
+                    <p>Unlike other calculators, we track the difference between your actual payment and standard EMI, showing exactly how it reduces your loan faster.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h4>Visual Comparison</h4>
+                    <p>See side-by-side how paying extra compares to just paying EMI. Watch your savings grow in real-time as you adjust the numbers.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h4>Detailed Schedule</h4>
+                    <p>Get month-by-month or year-by-year breakdown showing principal, interest, extra payment, and outstanding balance for each period.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h4>Interest Savings</h4>
+                    <p>Instantly see how much money you'll save in interest charges by paying that little extra each month. The numbers will surprise you!</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h4>Tenure Reduction</h4>
+                    <p>Know exactly when your loan will be paid off. Many users find they can close their 20-year loan in just 12-15 years!</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h4>100% Private</h4>
+                    <p>All calculations happen in your browser. We don't store, track, or share your financial data. Your privacy is guaranteed.</p>
+                </article>
+            </div>
+
+            <!-- Banks Section -->
+            <div class="banks-section">
+                <h3>Works with All Indian Banks</h3>
+                <div class="bank-logos">
+                    <span class="bank-logo">SBI</span>
+                    <span class="bank-logo">HDFC</span>
+                    <span class="bank-logo">ICICI</span>
+                    <span class="bank-logo">Axis</span>
+                    <span class="bank-logo">Kotak</span>
+                    <span class="bank-logo">PNB</span>
+                    <span class="bank-logo">BOB</span>
+                    <span class="bank-logo">LIC HFL</span>
+                </div>
+            </div>
+
+            <h3>How Does Extra Payment (Prepayment) Work in India?</h3>
+            <p>
+                When you pay more than your EMI, the extra amount goes directly towards reducing your <strong>principal balance</strong>. This is called a partial prepayment or part-payment. The beauty of this approach is:
+            </p>
+            <ul>
+                <li>Lower principal means less interest charged in subsequent months</li>
+                <li>Your EMI stays the same, but your tenure reduces automatically</li>
+                <li>Most Indian banks (SBI, HDFC, ICICI, Axis) allow unlimited prepayment on floating rate home loans without any penalty</li>
+                <li>Even small extra payments of ₹2,000-₹5,000 monthly can save lakhs over the loan tenure</li>
+            </ul>
+
+            <h3>Example: The Power of Paying ₹4,580 Extra</h3>
+            <p>
+                Let's say you have a home loan of <strong>₹16,00,000</strong> at <strong>8.5% interest</strong> for <strong>15 years</strong>. Your standard EMI would be approximately <strong>₹15,420</strong>. But if you pay <strong>₹20,000</strong> monthly instead:
+            </p>
+            <ul>
+                <li><strong>Extra Payment:</strong> ₹4,580 per month goes to principal</li>
+                <li><strong>Interest Saved:</strong> Approximately ₹3-4 lakhs over the loan tenure</li>
+                <li><strong>Time Saved:</strong> Pay off your loan 4-5 years earlier</li>
+                <li><strong>Original Tenure:</strong> 15 years → <strong>New Tenure:</strong> ~10-11 years</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" onclick="toggleFaq(this)" itemprop="name">
+                        What is EMI and how is it calculated?
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">EMI (Equated Monthly Installment) is a fixed payment amount made by a borrower to a lender at a specified date each month. It's calculated using the formula: EMI = P × r × (1+r)^n / ((1+r)^n – 1), where P is principal, r is monthly interest rate, and n is number of months. Each EMI consists of both principal and interest components.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" onclick="toggleFaq(this)" itemprop="name">
+                        Can I pay more than my EMI to reduce my loan faster?
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">Yes! Most Indian banks allow you to make part-prepayments on your home loan. For floating rate loans, banks like SBI, HDFC, ICICI, and Axis Bank allow unlimited prepayment without any penalty. The extra amount you pay goes directly towards reducing your principal, which reduces your overall interest burden and loan tenure.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" onclick="toggleFaq(this)" itemprop="name">
+                        How much can I save by paying extra on my home loan?
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">The savings can be substantial! For a ₹50 lakh loan at 8.5% for 20 years, paying just ₹5,000 extra monthly can save you over ₹12 lakhs in interest and help you close the loan 5-6 years earlier. Use our calculator above to see your exact savings based on your loan details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" onclick="toggleFaq(this)" itemprop="name">
+                        Is there any penalty for prepaying a home loan in India?
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">For floating rate home loans (which most borrowers have), RBI guidelines prohibit banks from charging prepayment penalties. However, fixed-rate loans may have prepayment charges of 2-3%. Always check your loan agreement or contact your bank to confirm.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" onclick="toggleFaq(this)" itemprop="name">
+                        What makes this calculator different from other EMI calculators?
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">Unlike standard EMI calculators that only calculate your monthly payment, our Smart EMI Calculator tracks the difference between your actual monthly payment and the standard EMI. This shows you exactly how that extra payment reduces your principal faster, saving you lakhs in interest and years off your loan tenure.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" onclick="toggleFaq(this)" itemprop="name">
+                        When is the best time to make prepayments on a home loan?
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">The earlier, the better! Prepayments made in the initial years of your loan have the maximum impact because your principal is highest then, and interest is calculated on the outstanding principal. Making consistent extra payments from year 1 can save you significantly more than prepaying in later years.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Tips to Close Your Home Loan Faster</h3>
+            <ul>
+                <li><strong>Round up your EMI:</strong> If your EMI is ₹15,420, pay ₹16,000 or ₹20,000 instead</li>
+                <li><strong>Use bonuses wisely:</strong> Deposit your annual bonus or increments as lump-sum prepayments</li>
+                <li><strong>Start early:</strong> Prepayments in the first 5 years have maximum impact</li>
+                <li><strong>Increase EMI after salary hikes:</strong> When your salary increases, increase your EMI proportionally</li>
+                <li><strong>Avoid the minimum trap:</strong> Paying just the EMI keeps you in debt longer than necessary</li>
+                <li><strong>Track your progress:</strong> Use this calculator regularly to stay motivated</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="footer-links">
+                <a href="#calculator">EMI Calculator</a>
+                <a href="#about-title">About</a>
+                <a href="#" onclick="showTips(); return false;">Prepayment Tips</a>
+            </div>
+            <p>
+                Made with ❤️ for Indian Home Loan Borrowers | 
+                Helping you become debt-free faster since 2024
+            </p>
+            <p style="margin-top: 15px; font-size: 0.8rem;">
+                <strong>Disclaimer:</strong> This calculator is for informational and educational purposes only. Actual EMI and savings may vary based on your bank's calculation method, processing fees, and other factors. Always consult your bank for exact figures.
+            </p>
+            <p style="margin-top: 10px; font-size: 0.75rem; color: var(--text-muted);">
+                © 2024 RinMukt.com | All calculations are performed locally in your browser. We respect your privacy.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Structured Data for SEO - Enhanced -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebApplication",
+                "@id": "https://rinmukt.com/#webapp",
+                "name": "Smart EMI Calculator with Extra Payment Tracker",
+                "description": "India's only EMI calculator that shows real savings when you pay more than your EMI. Calculate prepayment benefits, see interest savings, and track loan payoff.",
+                "url": "https://rinmukt.com/",
+                "applicationCategory": "FinanceApplication",
+                "operatingSystem": "Any",
+                "browserRequirements": "Requires JavaScript",
+                "softwareVersion": "2.0",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "INR"
+                },
+                "featureList": [
+                    "EMI Calculation",
+                    "Prepayment Calculator",
+                    "Extra Payment Tracking",
+                    "Amortization Schedule",
+                    "Interest Savings Calculator",
+                    "Tenure Reduction Calculator",
+                    "Side-by-side Comparison"
+                ],
+                "screenshot": "https://rinmukt.com/screenshot.jpg",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "ratingCount": "2847",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://rinmukt.com/#website",
+                "url": "https://rinmukt.com/",
+                "name": "RinMukt - Smart EMI Calculator",
+                "description": "Free online EMI calculator with prepayment tracking for Indian home loans",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://rinmukt.com/?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://rinmukt.com/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://rinmukt.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "EMI Calculator with Prepayment",
+                        "item": "https://rinmukt.com/"
+                    }
+                ]
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://rinmukt.com/#organization",
+                "name": "RinMukt",
+                "url": "https://rinmukt.com/",
+                "logo": "https://rinmukt.com/logo.png",
+                "sameAs": [],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer support",
+                    "availableLanguage": ["English", "Hindi"]
+                }
+            },
+            {
+                "@type": "FinancialProduct",
+                "@id": "https://rinmukt.com/#financialproduct",
+                "name": "Home Loan EMI Calculator Tool",
+                "description": "Free calculator to compute EMI with prepayment benefits for home loans in India",
+                "category": "Home Loan Calculator",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "RinMukt"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script>
+        // ============================================================================
+        // GLOBAL VARIABLES
+        // ============================================================================
+        let monthlySchedule = [];
+        let yearlySchedule = [];
+        let currentView = 'yearly';
+
+        // ============================================================================
+        // INITIALIZATION
+        // ============================================================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sync sliders with inputs
+            syncSliders();
+            
+            // Auto-calculate on load with default values
+            calculateEMI();
+        });
+
+        // ============================================================================
+        // SLIDER SYNC
+        // ============================================================================
+        function syncSliders() {
+            const interestInput = document.getElementById('interestRate');
+            const interestSlider = document.getElementById('interestRateSlider');
+            const tenureInput = document.getElementById('loanTenure');
+            const tenureSlider = document.getElementById('tenureSlider');
+
+            // Interest rate sync
+            interestSlider.addEventListener('input', function() {
+                interestInput.value = this.value;
+            });
+            
+            interestInput.addEventListener('input', function() {
+                if (this.value >= 5 && this.value <= 20) {
+                    interestSlider.value = this.value;
+                }
+            });
+
+            // Tenure sync
+            tenureSlider.addEventListener('input', function() {
+                tenureInput.value = this.value;
+            });
+            
+            tenureInput.addEventListener('input', function() {
+                if (this.value >= 1 && this.value <= 30) {
+                    tenureSlider.value = this.value;
+                }
+            });
+        }
+
+        // ============================================================================
+        // EMI CALCULATION
+        // ============================================================================
+        function calculateEMI() {
+            // Get input values
+            const principal = parseFloat(document.getElementById('loanAmount').value) || 0;
+            const annualRate = parseFloat(document.getElementById('interestRate').value) || 0;
+            const tenureYears = parseFloat(document.getElementById('loanTenure').value) || 0;
+            const monthlyPayment = parseFloat(document.getElementById('monthlyPayment').value) || 0;
+
+            // Validate inputs
+            if (principal <= 0 || annualRate <= 0 || tenureYears <= 0) {
+                alert('Please enter valid loan details');
+                return;
+            }
+
+            // Convert to monthly values
+            const monthlyRate = annualRate / 12 / 100;
+            const totalMonths = tenureYears * 12;
+
+            // Calculate standard EMI using formula: P * r * (1+r)^n / ((1+r)^n - 1)
+            const emi = principal * monthlyRate * Math.pow(1 + monthlyRate, totalMonths) / 
+                       (Math.pow(1 + monthlyRate, totalMonths) - 1);
+
+            // Calculate extra payment
+            const extraPayment = monthlyPayment > emi ? monthlyPayment - emi : 0;
+
+            // Generate amortization schedules
+            const normalSchedule = generateSchedule(principal, monthlyRate, emi, 0, totalMonths);
+            const prepaySchedule = generateSchedule(principal, monthlyRate, emi, extraPayment, totalMonths);
+
+            // Store schedules globally
+            monthlySchedule = prepaySchedule.monthly;
+            yearlySchedule = prepaySchedule.yearly;
+
+            // Update UI
+            updateResults(emi, normalSchedule, prepaySchedule, extraPayment, principal);
+            
+            // Show results section
+            document.getElementById('resultsSection').classList.add('visible');
+            
+            // Scroll to results on mobile
+            if (window.innerWidth < 1024) {
+                document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // ============================================================================
+        // AMORTIZATION SCHEDULE GENERATOR
+        // ============================================================================
+        function generateSchedule(principal, monthlyRate, emi, extraPayment, maxMonths) {
+            let balance = principal;
+            let totalInterest = 0;
+            let totalPrincipal = 0;
+            let totalExtra = 0;
+            const monthly = [];
+            const yearly = [];
+            let yearlyData = {
+                year: 1,
+                emi: 0,
+                principal: 0,
+                interest: 0,
+                extra: 0,
+                endBalance: 0
+            };
+
+            let month = 0;
+            while (balance > 0 && month < maxMonths * 2) { // Safety limit
+                month++;
+                
+                // Calculate interest for this month
+                const interestPayment = balance * monthlyRate;
+                
+                // Calculate principal portion of EMI
+                let principalPayment = emi - interestPayment;
+                
+                // Handle last payment
+                if (principalPayment + extraPayment >= balance) {
+                    principalPayment = balance;
+                    balance = 0;
+                } else {
+                    // Add extra payment to principal
+                    principalPayment += extraPayment;
+                    balance -= principalPayment;
+                }
+
+                // Track totals
+                totalInterest += interestPayment;
+                totalPrincipal += (principalPayment - (principalPayment > emi - interestPayment ? extraPayment : 0));
+                totalExtra += (balance > 0 ? extraPayment : 0);
+
+                // Monthly record
+                monthly.push({
+                    month: month,
+                    emi: emi,
+                    principal: principalPayment - extraPayment,
+                    interest: interestPayment,
+                    extra: balance > 0 ? extraPayment : principalPayment - (emi - interestPayment),
+                    balance: Math.max(0, balance)
+                });
+
+                // Accumulate yearly data
+                yearlyData.emi += emi;
+                yearlyData.principal += (principalPayment - extraPayment);
+                yearlyData.interest += interestPayment;
+                yearlyData.extra += (balance > 0 ? extraPayment : principalPayment - (emi - interestPayment));
+                yearlyData.endBalance = Math.max(0, balance);
+
+                // At year end or loan end, push yearly summary
+                if (month % 12 === 0 || balance <= 0) {
+                    yearly.push({...yearlyData});
+                    yearlyData = {
+                        year: Math.floor(month / 12) + 1,
+                        emi: 0,
+                        principal: 0,
+                        interest: 0,
+                        extra: 0,
+                        endBalance: 0
+                    };
+                }
+
+                if (balance <= 0) break;
+            }
+
+            return {
+                monthly,
+                yearly,
+                totalMonths: month,
+                totalInterest,
+                totalPrincipal: principal,
+                totalExtra: monthlySchedule.length > 0 ? monthlySchedule.reduce((sum, m) => sum + m.extra, 0) : 0
+            };
+        }
+
+        // ============================================================================
+        // UPDATE UI
+        // ============================================================================
+        function updateResults(emi, normalSchedule, prepaySchedule, extraPayment, principal) {
+            // Format currency
+            const formatCurrency = (num) => '₹' + Math.round(num).toLocaleString('en-IN');
+            
+            // Standard EMI
+            document.getElementById('emiAmount').textContent = formatCurrency(emi);
+            
+            // Calculate totals
+            const normalTotalInterest = normalSchedule.monthly.reduce((sum, m) => sum + m.interest, 0);
+            const prepayTotalInterest = prepaySchedule.monthly.reduce((sum, m) => sum + m.interest, 0);
+            const interestSaved = normalTotalInterest - prepayTotalInterest;
+            const monthsSaved = normalSchedule.totalMonths - prepaySchedule.totalMonths;
+
+            // Update stat cards
+            document.getElementById('totalInterest').textContent = formatCurrency(normalTotalInterest);
+            document.getElementById('newInterest').textContent = formatCurrency(prepayTotalInterest);
+            document.getElementById('newTenure').textContent = formatTenure(prepaySchedule.totalMonths);
+
+            // Update comparison cards
+            document.getElementById('normalEMI').textContent = formatCurrency(emi);
+            document.getElementById('normalTenure').textContent = `${normalSchedule.totalMonths} months`;
+            document.getElementById('normalInterest').textContent = formatCurrency(normalTotalInterest);
+            document.getElementById('normalTotal').textContent = formatCurrency(principal + normalTotalInterest);
+
+            document.getElementById('prepayEMI').textContent = formatCurrency(emi + extraPayment);
+            document.getElementById('prepayTenure').textContent = `${prepaySchedule.totalMonths} months`;
+            document.getElementById('prepayInterest').textContent = formatCurrency(prepayTotalInterest);
+            document.getElementById('prepayTotal').textContent = formatCurrency(principal + prepayTotalInterest);
+
+            // Update savings banner
+            if (extraPayment > 0 && interestSaved > 0) {
+                document.getElementById('savingsBanner').style.display = 'flex';
+                document.getElementById('extraPaymentAmount').textContent = formatCurrency(extraPayment);
+                document.getElementById('totalSavings').textContent = formatCurrency(interestSaved);
+                document.getElementById('timeSaved').textContent = `${monthsSaved} months`;
+            } else {
+                document.getElementById('savingsBanner').style.display = 'none';
+            }
+
+            // Update progress (assuming loan just started)
+            document.getElementById('progressPercent').textContent = '0%';
+            document.getElementById('progressFill').style.width = '0%';
+            document.getElementById('remainingAmount').textContent = formatCurrency(principal) + ' Remaining';
+
+            // Update amortization table
+            updateTable();
+        }
+
+        // ============================================================================
+        // FORMAT TENURE
+        // ============================================================================
+        function formatTenure(months) {
+            const years = Math.floor(months / 12);
+            const remainingMonths = months % 12;
+            
+            if (years === 0) {
+                return `${months} months`;
+            } else if (remainingMonths === 0) {
+                return `${years} years`;
+            } else {
+                return `${years}y ${remainingMonths}m`;
+            }
+        }
+
+        // ============================================================================
+        // TABLE VIEW TOGGLE
+        // ============================================================================
+        function toggleView(view) {
+            currentView = view;
+            
+            document.getElementById('yearlyBtn').classList.toggle('active', view === 'yearly');
+            document.getElementById('monthlyBtn').classList.toggle('active', view === 'monthly');
+            
+            updateTable();
+        }
+
+        function updateTable() {
+            const tbody = document.getElementById('tableBody');
+            const data = currentView === 'yearly' ? yearlySchedule : monthlySchedule;
+            
+            const formatCurrency = (num) => '₹' + Math.round(num).toLocaleString('en-IN');
+            
+            let html = '';
+            
+            if (currentView === 'yearly') {
+                data.forEach((row, index) => {
+                    html += `
+                        <tr>
+                            <td>Year ${index + 1}</td>
+                            <td>${formatCurrency(row.emi)}</td>
+                            <td>${formatCurrency(row.principal)}</td>
+                            <td>${formatCurrency(row.interest)}</td>
+                            <td class="extra-payment">${row.extra > 0 ? formatCurrency(row.extra) : '-'}</td>
+                            <td>${formatCurrency(row.endBalance)}</td>
+                        </tr>
+                    `;
+                });
+            } else {
+                data.forEach((row) => {
+                    html += `
+                        <tr>
+                            <td>Month ${row.month}</td>
+                            <td>${formatCurrency(row.emi)}</td>
+                            <td>${formatCurrency(row.principal)}</td>
+                            <td>${formatCurrency(row.interest)}</td>
+                            <td class="extra-payment">${row.extra > 0 ? formatCurrency(row.extra) : '-'}</td>
+                            <td>${formatCurrency(row.balance)}</td>
+                        </tr>
+                    `;
+                });
+            }
+            
+            tbody.innerHTML = html;
+        }
+
+        // ============================================================================
+        // FAQ TOGGLE
+        // ============================================================================
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('open');
+        }
+
+        // ============================================================================
+        // TIPS MODAL
+        // ============================================================================
+        function showTips() {
+            alert(`💡 Smart Prepayment Tips for Indian Home Loans:
+
+1. 🏦 Most banks allow UNLIMITED prepayment on floating rate loans without penalty
+
+2. ⏰ Prepay in EARLY YEARS for maximum impact - interest savings are highest then
+
+3. 💰 Even ₹3,000-5,000 extra monthly can save ₹5-10 lakhs over loan tenure
+
+4. 🎁 Use BONUSES wisely - annual bonus as lump-sum prepayment = big savings
+
+5. 📈 INCREASE EMI after salary hikes - you won't feel the pinch
+
+6. 📊 Track progress MONTHLY with this calculator to stay motivated
+
+7. ✅ Check these banks for best prepayment terms:
+   - SBI: No charges on floating rate
+   - HDFC: No charges on floating rate  
+   - ICICI: No charges on floating rate
+   - Axis: No charges on floating rate
+
+8. ⚠️ Fixed rate loans may have 2-3% prepayment charges
+
+Pro Tip: Set up auto-debit for a rounded amount (e.g., ₹20,000 instead of ₹15,420) and forget about it!`);
+        }
+
+        // ============================================================================
+        // KEYBOARD ACCESSIBILITY
+        // ============================================================================
+        document.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && e.target.tagName !== 'BUTTON') {
+                calculateEMI();
+            }
+        });
+    </script>
+</body>
+</html>

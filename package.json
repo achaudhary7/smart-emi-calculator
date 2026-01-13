@@ -1,0 +1,28 @@
+{
+  "name": "smart-emi-calculator",
+  "version": "1.0.0",
+  "description": "Smart EMI Calculator with Extra Payment Tracker - Deployment Pipeline",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "node deploy.js",
+    "deploy:dry-run": "node deploy.js --dry-run",
+    "deploy:verbose": "node deploy.js --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achaudhary7/smart-emi-calculator.git"
+  },
+  "keywords": [
+    "emi-calculator",
+    "loan-calculator",
+    "prepayment",
+    "india",
+    "home-loan"
+  ],
+  "author": "achaudhary7@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "basic-ftp": "^5.0.3",
+    "dotenv": "^16.3.1"
+  }
+}
