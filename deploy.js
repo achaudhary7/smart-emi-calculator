@@ -46,11 +46,11 @@ const config = {
     remoteDir: process.env.FTP_REMOTE_DIR || '/public_html',
     filesToDeploy: [
         'index.html',
-        '.htaccess'
-        // Add more files here as your project grows:
-        // 'styles.css',
-        // 'script.js',
-        // 'images/logo.png'
+        '.htaccess',
+        'fonts/outfit-400.woff2',
+        'fonts/outfit-600.woff2',
+        'fonts/outfit-700.woff2',
+        'fonts/jetbrains-mono-500.woff2'
     ]
 };
 
@@ -159,11 +159,26 @@ async function deploy() {
         
         let uploadedCount = 0;
         let totalSize = 0;
+        const createdDirs = new Set();
 
         for (const file of config.filesToDeploy) {
             const localPath = path.resolve(file);
-            const remotePath = path.basename(file);
+            const remotePath = file.replace(/\\/g, '/'); // Use forward slashes
+            const remoteDir = path.dirname(remotePath);
             const info = getFileInfo(localPath);
+
+            // Create remote directory if needed
+            if (remoteDir && remoteDir !== '.' && !createdDirs.has(remoteDir)) {
+                try {
+                    log.info(`Creating directory: ${remoteDir}...`);
+                    await client.ensureDir(remoteDir);
+                    await client.cd(config.remoteDir); // Go back to root
+                    createdDirs.add(remoteDir);
+                    log.success(`Created directory: ${remoteDir}`);
+                } catch (err) {
+                    // Directory might already exist
+                }
+            }
 
             log.info(`Uploading: ${file} (${info.sizeFormatted})...`);
             
