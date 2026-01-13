@@ -193,11 +193,23 @@ async function deploy() {
 
         // Summary
         log.header('✨ DEPLOYMENT COMPLETE');
+        const version = Date.now();
         console.log(`📊 Summary:`);
         console.log(`   ✅ Files uploaded: ${uploadedCount}`);
         console.log(`   📦 Total size: ${(totalSize / 1024).toFixed(2)} KB`);
+        console.log(`   🔖 Version: ${version}`);
         console.log(`   🌐 URL: https://rinmukt.com/`);
-        console.log(`\n🎉 Your website is now live!\n`);
+        
+        log.header('🧹 CACHE CLEARING');
+        console.log(`${colors.yellow}To clear Hostinger cache:${colors.reset}`);
+        console.log(`   1. Go to: https://hpanel.hostinger.com/`);
+        console.log(`   2. Select your website`);
+        console.log(`   3. Advanced → Cache Manager → Flush Cache`);
+        console.log(`   OR`);
+        console.log(`   4. Visit: https://rinmukt.com/?v=${version}`);
+        console.log(`      (Cache-busting URL)\n`);
+        
+        console.log(`🎉 Your website is now live!\n`);
 
         return true;
 
